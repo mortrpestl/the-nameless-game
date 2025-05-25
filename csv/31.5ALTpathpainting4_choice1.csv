@@ -1,0 +1,6 @@
+Ethel,../graphics/ethelpfp.png,"Hi, can you help me to go to the next location, please?",
+Magura,../graphics/paintingpfp4.png,"Since you’ve passed all three levels, then I believe that you are worthy of getting the fragment. ",
+Magura,../graphics/paintingpfp4.png,Here get this.,
+Ethel,../graphics/ethelpfp.png,Thank you very much! Goodbye!,
+Magura,../graphics/paintingpfp4.png,Good luck my friend,
+Game,null,On to the next location,displayFrag2

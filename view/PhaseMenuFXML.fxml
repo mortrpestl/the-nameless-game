@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="placeholder.PhaseMenuFXMLController">
+   <children>
+      <ImageView fitHeight="576.0" fitWidth="1035.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../graphics/background.png" />
+         </image>
+      </ImageView>
+      <BorderPane layoutX="-3.0" layoutY="-11.0" prefHeight="589.0" prefWidth="1024.0">
+         <right>
+            <StackPane prefHeight="150.0" prefWidth="268.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f3edff" height="546.0" stroke="BLACK" strokeType="INSIDE" width="249.0">
+                     <StackPane.margin>
+                        <Insets top="20.0" />
+                     </StackPane.margin>
+                  </Rectangle>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <center>
+                        <Text fx:id="phase_desc" fill="#242e57" strokeType="OUTSIDE" strokeWidth="0.0" text="The beginning of an unnamed character's journey in a post-apocalyptic dystopian world." textAlignment="JUSTIFY" wrappingWidth="220.0" BorderPane.alignment="TOP_CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </center>
+                     <bottom>
+                        <StackPane fx:id="enter_portion" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Rectangle fx:id="enter_btn" arcHeight="50.0" arcWidth="50.0" fill="#8757bd" height="50.0" onMouseClicked="#confirmPhase" onMouseEntered="#rectOnMouseEnter" onMouseExited="#rectOnMouseExit" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </Rectangle>
+                              <Text fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;enter&gt;">
+                                 <font>
+                                    <Font name="Consolas" size="26.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                     </bottom>
+                     <StackPane.margin>
+                        <Insets top="50.0" />
+                     </StackPane.margin>
+                     <top>
+                        <StackPane prefHeight="52.0" prefWidth="268.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Text fx:id="phase_title" fill="#131934" strokeType="OUTSIDE" strokeWidth="0.0" text="Phase 0" textAlignment="CENTER" wrappingWidth="240.0">
+                                 <font>
+                                    <Font name="Consolas" size="30.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <BorderPane.margin>
+                              <Insets bottom="15.0" />
+                           </BorderPane.margin>
+                        </StackPane>
+                     </top>
+                  </BorderPane>
+               </children>
+            </StackPane>
+         </right>
+         <center>
+            <StackPane prefHeight="552.0" prefWidth="756.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="560.0" fitWidth="746.0" pickOnBounds="true" StackPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../graphics/bggalaxy.jpg" />
+                     </image>
+                  </ImageView>
+                  <GridPane alignment="CENTER" prefHeight="572.0" prefWidth="733.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="378.0" minWidth="10.0" prefWidth="378.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="378.0" minWidth="10.0" prefWidth="378.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="phase0_img" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#clickPhase" onMouseEntered="#onMouseEnter" onMouseExited="#onMouseExit" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../graphics/phaseselector.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Phase 0">
+                                 <font>
+                                    <Font name="Consolas" size="22.0" />
+                                 </font>
+                                 <FlowPane.margin>
+                                    <Insets left="10.0" />
+                                 </FlowPane.margin>
+                              </Text>
+                           </children>
+                        </FlowPane>
+                        <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fx:id="phase2_img" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#clickPhase" onMouseEntered="#onMouseEnter" onMouseExited="#onMouseExit" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../graphics/phaseselector.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Phase 2">
+                                 <font>
+                                    <Font name="Consolas" size="22.0" />
+                                 </font>
+                                 <FlowPane.margin>
+                                    <Insets left="10.0" />
+                                 </FlowPane.margin>
+                              </Text>
+                           </children>
+                        </FlowPane>
+                        <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <children>
+                              <ImageView fx:id="phase1_img" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#clickPhase" onMouseEntered="#onMouseEnter" onMouseExited="#onMouseExit" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../graphics/phaseselector.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Phase 1">
+                                 <font>
+                                    <Font name="Consolas" size="22.0" />
+                                 </font>
+                                 <FlowPane.margin>
+                                    <Insets left="10.0" />
+                                 </FlowPane.margin>
+                              </Text>
+                           </children>
+                        </FlowPane>
+                        <FlowPane alignment="CENTER" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fx:id="phase3_img" fitHeight="200.0" fitWidth="200.0" onMouseClicked="#clickPhase" onMouseEntered="#onMouseEnter" onMouseExited="#onMouseExit" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../graphics/phaseselector.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Phase 3">
+                                 <font>
+                                    <Font name="Consolas" size="22.0" />
+                                 </font>
+                                 <FlowPane.margin>
+                                    <Insets left="10.0" />
+                                 </FlowPane.margin>
+                              </Text>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="80.0" prefWidth="85.0">
+         <top>
+            <BorderPane prefHeight="65.0" prefWidth="85.0" BorderPane.alignment="CENTER">
+               <left>
+                  <ImageView fx:id="exit_btn" fitHeight="70.0" fitWidth="70.0" onMouseClicked="#exit" onMouseEntered="#onMouseEnter" onMouseExited="#onMouseExit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../graphics/exitButton.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets left="15.0" top="17.5" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </left>
+            </BorderPane>
+         </top>
+      </BorderPane>
+   </children>
+</Pane>

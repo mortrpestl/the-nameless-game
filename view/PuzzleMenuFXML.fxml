@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyPressDetect" prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="placeholder.PuzzleMenuFXMLController">
+   <children>
+      <ImageView fitHeight="576.0" fitWidth="1024.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../graphics/background.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="520.0">
+               <children>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="520.0" prefWidth="520.0" style="-fx-background-color: #a590bf;">
+                     <children>
+                        <GridPane prefHeight="496.0" prefWidth="496.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <FlowPane fx:id="flow00" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" />
+                              <FlowPane fx:id="flow01" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.rowIndex="1" />
+                              <FlowPane fx:id="flow02" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.rowIndex="2">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../graphics/charaIcon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow03" layoutX="10.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.rowIndex="3" />
+                              <FlowPane fx:id="flow04" layoutX="10.0" layoutY="176.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.rowIndex="4" />
+                              <FlowPane fx:id="flow05" layoutX="10.0" layoutY="259.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.rowIndex="5" />
+                              <FlowPane fx:id="flow10" layoutX="10.0" layoutY="424.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="1" />
+                              <FlowPane fx:id="flow11" layoutX="10.0" layoutY="342.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <FlowPane fx:id="flow12" layoutX="92.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../graphics/yellowPuzzleBlock.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow13" layoutX="92.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <FlowPane fx:id="flow14" layoutX="92.0" layoutY="176.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <children>
+                                    <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="82.0" style="-fx-background-color: #a590bf;" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow15" layoutX="92.0" layoutY="259.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <children>
+                                    <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="82.0" style="-fx-background-color: #a590bf;" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow20" layoutX="92.0" layoutY="424.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="2">
+                                 <children>
+                                    <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="82.0" style="-fx-background-color: #a590bf;" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow21" layoutX="92.0" layoutY="342.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <children>
+                                    <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="82.0" style="-fx-background-color: #a590bf;" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow22" layoutX="174.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <FlowPane fx:id="flow23" layoutX="174.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <children>
+                                    <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="82.0" style="-fx-background-color: #a590bf;" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow24" layoutX="174.0" layoutY="176.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <children>
+                                    <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="82.0" style="-fx-background-color: #a590bf;" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow25" layoutX="174.0" layoutY="259.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../graphics/brownLeverNorth.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow30" layoutX="174.0" layoutY="424.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="3">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../graphics/brownLeverWest.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow31" layoutX="174.0" layoutY="342.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <FlowPane fx:id="flow32" layoutX="257.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <FlowPane fx:id="flow33" layoutX="257.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../graphics/yellowDoorNorth.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow34" layoutX="257.0" layoutY="176.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                              <FlowPane fx:id="flow35" layoutX="257.0" layoutY="259.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                              <FlowPane fx:id="flow40" layoutX="257.0" layoutY="424.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="4" />
+                              <FlowPane fx:id="flow41" layoutX="257.0" layoutY="342.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <FlowPane fx:id="flow42" layoutX="340.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                              <FlowPane fx:id="flow43" layoutX="340.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                 <children>
+                                    <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="82.0" style="-fx-background-color: #a590bf;" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow44" layoutX="340.0" layoutY="176.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../graphics/brownDoorWest.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow45" layoutX="340.0" layoutY="259.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                 <children>
+                                    <FlowPane prefHeight="82.0" prefWidth="82.0" style="-fx-background-color: #a590bf;" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow50" layoutX="340.0" layoutY="424.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="5" />
+                              <FlowPane fx:id="flow51" layoutX="340.0" layoutY="342.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <FlowPane fx:id="flow52" layoutX="423.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../graphics/yellowTarget.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow53" layoutX="423.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                 <children>
+                                    <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="82.0" style="-fx-background-color: #a590bf;" />
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow54" layoutX="423.0" layoutY="176.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4d1784;" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                 <children>
+                                    <ImageView fitHeight="82.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../graphics/trophy.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </FlowPane>
+                              <FlowPane fx:id="flow55" layoutX="423.0" layoutY="259.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52368d;" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                                 <children>
+                                    <FlowPane layoutX="10.0" layoutY="10.0" prefHeight="82.0" prefWidth="82.0" style="-fx-background-color: #a590bf;" />
+                                 </children>
+                              </FlowPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </FlowPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <BorderPane onKeyPressed="#keyPressDetect" prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <BorderPane prefHeight="87.5" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <left>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" onMouseClicked="#pressPause" onMouseEntered="#changePauseButtonOnEnter" onMouseExited="#changePauseButtonOnExit" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../graphics/pauseButton.png" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets left="17.5" top="17.5" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </left>
+               <bottom>
+                  <Pane prefHeight="0.0" prefWidth="1024.0" BorderPane.alignment="CENTER" />
+               </bottom>
+               <top>
+                  <Pane prefHeight="0.0" prefWidth="1024.0" BorderPane.alignment="CENTER" />
+               </top>
+               <center>
+                  <Pane prefHeight="200.0" prefWidth="93.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </top>
+      </BorderPane>
+      <Pane fx:id="finPane" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #190039; -fx-opacity: 0.85;" />
+            <VBox alignment="CENTER" prefHeight="576.0" prefWidth="1024.0">
+               <children>
+                  <Text fx:id="bigFinText" fill="#e1d7ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations!" textAlignment="CENTER">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="smallFinText" fill="#e1d7ff" layoutX="300.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You beat the puzzle!" textAlignment="CENTER" wrappingWidth="512.0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <HBox fx:id="hasLives" alignment="CENTER" prefHeight="147.0" prefWidth="1024.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Rectangle fx:id="backLoc" arcHeight="40.0" arcWidth="40.0" fill="#9972c9" height="78.0" onMouseClicked="#back" onMouseEntered="#rectOnMouseEnter" onMouseExited="#rectOnMouseExit" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" style="-fx-opacity: 1;" width="300.0" />
+                                    <Text fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;back to location&gt;">
+                                       <font>
+                                          <Font size="28.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Rectangle fx:id="backMain" arcHeight="40.0" arcWidth="40.0" fill="#9972c9" height="78.0" onMouseClicked="#back" onMouseEntered="#rectOnMouseEnter" onMouseExited="#rectOnMouseExit" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" style="-fx-opacity: 1;" width="300.0" />
+                                    <Text fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;back to main menu&gt;">
+                                       <font>
+                                          <Font size="28.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

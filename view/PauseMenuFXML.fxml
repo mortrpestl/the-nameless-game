@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #290951;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="placeholder.PauseMenuFXMLController">
+   <children>
+      <BorderPane layoutX="1.0" layoutY="-1.0" prefHeight="576.0" prefWidth="1024.0">
+         <left>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fx:id="pause_btn" fitHeight="70.0" fitWidth="70.0" onMouseClicked="#takeAction" onMouseEntered="#changePauseButtonOnEnter" onMouseExited="#changePauseButtonOnExit" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/pauseButton.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="17.5" top="17.5" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </top>
+            </BorderPane>
+         </left>
+         <center>
+            <VBox alignment="CENTER" prefHeight="416.0" prefWidth="451.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="57.0" prefWidth="624.0" />
+                  <Text fx:id="pause_title" fill="#e1d7ff" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;PAUSED&gt;" textAlignment="CENTER" wrappingWidth="417.1949462890625">
+                     <font>
+                        <Font name="Consolas" size="61.0" />
+                     </font>
+                  </Text>
+                  <StackPane prefHeight="150.0" prefWidth="579.0">
+                     <children>
+                        <Rectangle fx:id="resume_btn" arcHeight="40.0" arcWidth="40.0" fill="#8757bd" height="96.0" onMouseClicked="#takeAction" onMouseEntered="#changeBackgroundOnEnter" onMouseExited="#changeBackgroundOnExit" stroke="BLACK" strokeType="INSIDE" width="449.0" />
+                        <Text fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;resume&gt;" textAlignment="CENTER" wrappingWidth="168.5283660888672">
+                           <font>
+                              <Font name="Consolas" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle fx:id="settings_btn" arcHeight="40.0" arcWidth="40.0" fill="#8757bd" height="96.0" onMouseClicked="#takeAction" onMouseEntered="#changeBackgroundOnEnter" onMouseExited="#changeBackgroundOnExit" stroke="BLACK" strokeType="INSIDE" width="449.0" />
+                        <Text fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;settings&gt;" textAlignment="CENTER" wrappingWidth="205.86170959472656">
+                           <font>
+                              <Font name="Consolas" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle fx:id="location_btn" arcHeight="40.0" arcWidth="40.0" fill="#8757bd" height="96.0" onMouseClicked="#takeAction" onMouseEntered="#changeBackgroundOnEnter" onMouseExited="#changeBackgroundOnExit" stroke="BLACK" strokeType="INSIDE" width="449.0" />
+                        <Text fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;back to location&gt;" textAlignment="CENTER" wrappingWidth="363.1950092315674">
+                           <font>
+                              <Font name="Consolas" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle fx:id="mainmenu_btn" arcHeight="40.0" arcWidth="40.0" fill="#8757bd" height="96.0" onMouseClicked="#takeAction" onMouseEntered="#changeBackgroundOnEnter" onMouseExited="#changeBackgroundOnExit" stroke="BLACK" strokeType="INSIDE" width="449.0" />
+                        <Text fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;go to main menu&gt;" textAlignment="CENTER" wrappingWidth="344.5283966064453">
+                           <font>
+                              <Font name="Consolas" size="36.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </StackPane>
+                  <Pane prefHeight="57.0" prefWidth="624.0" />
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</Pane>

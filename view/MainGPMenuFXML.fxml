@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane prefHeight="576.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="placeholder.MainGPMenuFXMLController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <GridPane prefHeight="576.0" prefWidth="516.0" style="-fx-background-color: #14002d;" vgap="12.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="423.0843200683594" minHeight="10.0" prefHeight="418.5173034667969" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="279.5840759277344" minHeight="10.0" prefHeight="145.98269653320312" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <StackPane prefHeight="413.0" prefWidth="513.0">
+                     <children>
+                        <ImageView fx:id="bg" fitHeight="427.0" fitWidth="513.0" pickOnBounds="true" />
+                        <ImageView fx:id="toDarkenBG" fitHeight="428.0" fitWidth="513.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../graphics/locBackgroundDarkenOverlay.png" />
+                           </image></ImageView>
+                        <ImageView fx:id="toGlow" fitHeight="356.0" fitWidth="295.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/itemGlow.png" />
+                           </image></ImageView>
+                        <ImageView fx:id="displayed" fitHeight="201.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
+                        <BorderPane prefHeight="413.0" prefWidth="513.0">
+                           <top>
+                              <BorderPane prefHeight="79.0" prefWidth="513.0" BorderPane.alignment="CENTER">
+                                 <left>
+                                    <ImageView fx:id="pause" fitHeight="70.0" fitWidth="70.0" onMouseClicked="#pressPause" onMouseEntered="#changePauseButtonOnEnter" onMouseExited="#changePauseButtonOnExit" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                       <image>
+                                          <Image url="@../graphics/pauseButton.png" />
+                                       </image>
+                                       <BorderPane.margin>
+                                          <Insets left="15.0" top="17.5" />
+                                       </BorderPane.margin>
+                                    </ImageView>
+                                 </left>
+                              </BorderPane>
+                           </top>
+                        </BorderPane>
+                     </children>
+                  </StackPane>
+                  <FlowPane alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="dialogue" alignment="CENTER" prefHeight="133.0" prefWidth="324.0" wrapText="true">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <FlowPane.margin>
+                              <Insets left="170.0" />
+                           </FlowPane.margin>
+                        </Label>
+                     </children>
+                  </FlowPane>
+               </children>
+            </GridPane>
+            <FlowPane alignment="CENTER_LEFT" prefHeight="461.0" prefWidth="513.0">
+               <children>
+                  <ImageView fx:id="pfp" fitHeight="122.4" fitWidth="122.4" pickOnBounds="true" preserveRatio="true" style="-fx-image: url('sampleProfilePicture.png');">
+                     <FlowPane.margin>
+                        <Insets left="25.0" right="25.0" />
+                     </FlowPane.margin>
+                  </ImageView>
+                  <Label fx:id="charName" style="-fx-background-color: #14002D;" textFill="#f1ecff">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="5.0" top="273.0" />
+               </StackPane.margin>
+            </FlowPane>
+         </children>
+      </StackPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <ImageView fitHeight="576.0" fitWidth="512.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../graphics/background.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #a590bf;">
+               <StackPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </StackPane.margin>
+            </Pane>
+            <GridPane alignment="CENTER" prefHeight="484.0" prefWidth="452.0" style="-fx-background-color: #ceb7eb;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane vgap="5.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <GridPane.margin>
+                        <Insets bottom="-214.0" />
+                     </GridPane.margin>
+                     <children>
+                        <FlowPane fx:id="actionButton1" alignment="CENTER_LEFT" onMouseClicked="#actionPress" onMouseEntered="#rightButtonsOnEnter" onMouseExited="#rightButtonsOnExit" prefHeight="69.0" prefWidth="434.0" style="-fx-background-color: #e1d7ff;">
+                           <children>
+                              <ImageView fx:id="icon1" fitHeight="50.0" fitWidth="50.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <FlowPane.margin>
+                                    <Insets left="15.0" right="20.0" />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label fx:id="actionName1" mouseTransparent="true" textFill="#3d0676">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                        <FlowPane fx:id="actionButton2" alignment="CENTER_LEFT" onMouseClicked="#actionPress" onMouseEntered="#rightButtonsOnEnter" onMouseExited="#rightButtonsOnExit" prefHeight="69.0" prefWidth="434.0" style="-fx-background-color: #e1d7ff;" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fx:id="icon2" fitHeight="50.0" fitWidth="50.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <FlowPane.margin>
+                                    <Insets left="15.0" right="20.0" />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label fx:id="actionName2" mouseTransparent="true" textFill="#3d0676">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                        <FlowPane fx:id="actionButton3" alignment="CENTER_LEFT" onMouseClicked="#actionPress" onMouseEntered="#rightButtonsOnEnter" onMouseExited="#rightButtonsOnExit" prefHeight="69.0" prefWidth="434.0" style="-fx-background-color: #e1d7ff;" GridPane.rowIndex="2">
+                           <children>
+                              <ImageView fx:id="icon3" fitHeight="50.0" fitWidth="50.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <FlowPane.margin>
+                                    <Insets left="15.0" right="20.0" />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label fx:id="actionName3" mouseTransparent="true" textFill="#3d0676">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                        <FlowPane fx:id="actionButton4" alignment="CENTER_LEFT" onMouseClicked="#actionPress" onMouseEntered="#rightButtonsOnEnter" onMouseExited="#rightButtonsOnExit" prefHeight="69.0" prefWidth="434.0" style="-fx-background-color: #e1d7ff;" GridPane.rowIndex="3">
+                           <children>
+                              <ImageView fx:id="icon4" fitHeight="50.0" fitWidth="50.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <FlowPane.margin>
+                                    <Insets left="15.0" right="20.0" />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label fx:id="actionName4" mouseTransparent="true" textFill="#3d0676">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                        <FlowPane fx:id="actionButton5" alignment="CENTER_LEFT" onMouseClicked="#actionPress" onMouseEntered="#rightButtonsOnEnter" onMouseExited="#rightButtonsOnExit" prefHeight="69.0" prefWidth="434.0" style="-fx-background-color: #e1d7ff;" GridPane.rowIndex="4">
+                           <children>
+                              <ImageView fx:id="icon5" fitHeight="50.0" fitWidth="50.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <FlowPane.margin>
+                                    <Insets left="15.0" right="20.0" />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label fx:id="actionName5" mouseTransparent="true" textFill="#3d0676">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                        <FlowPane fx:id="actionButton6" alignment="CENTER_LEFT" onMouseClicked="#actionPress" onMouseEntered="#rightButtonsOnEnter" onMouseExited="#rightButtonsOnExit" prefHeight="69.0" prefWidth="434.0" style="-fx-background-color: #e1d7ff;" GridPane.rowIndex="5">
+                           <children>
+                              <ImageView fx:id="icon6" fitHeight="50.0" fitWidth="50.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                                 <FlowPane.margin>
+                                    <Insets left="15.0" right="20.0" />
+                                 </FlowPane.margin>
+                              </ImageView>
+                              <Label fx:id="actionName6" mouseTransparent="true" textFill="#3d0676">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </GridPane>
+                  <HBox alignment="CENTER" prefHeight="256.0" prefWidth="452.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="prev" alignment="CENTER" onMouseClicked="#navigatePress" onMouseEntered="#labelOnMouseEnter" onMouseExited="#labelOnMouseExit" prefHeight="39.0" prefWidth="256.0" style="-fx-background-color: #3d0676;" text="&lt;-" textFill="#e1d7ff">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="next" alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#navigatePress" onMouseEntered="#labelOnMouseEnter" onMouseExited="#labelOnMouseExit" prefHeight="39.0" prefWidth="256.0" style="-fx-background-color: #3d0676;" text="-&gt;" textFill="#e1d7ff">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <GridPane.margin>
+                        <Insets top="219.0" />
+                     </GridPane.margin>
+                  </HBox>
+               </children>
+               <StackPane.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </StackPane.margin>
+            </GridPane>
+            <Pane fx:id="obstructor" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #190039; -fx-opacity: 0.85;">
+               <children>
+                  <Text fill="#e1d7ff" layoutX="50.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;listen to the dialogue!&gt;" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="422.44207763671875">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#e1d7ff" layoutX="80.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;this menu will reopen when the character finishes speaking!&gt;" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="359.0">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Pane fx:id="choicePane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #4e2280;">
+               <children>
+                  <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#e1d7ff" height="546.0" layoutX="15.0" layoutY="14.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" width="483.0" />
+                  <VBox alignment="CENTER" prefHeight="576.0" prefWidth="512.0" spacing="15.0">
+                     <children>
+                        <StackPane prefHeight="111.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle fx:id="choiceQues" arcHeight="40.0" arcWidth="40.0" fill="#c4a9e8" height="111.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" width="436.0">
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </Rectangle>
+                              <Text fx:id="question" fill="#3d0676" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;question here&gt;" textAlignment="CENTER" wrappingWidth="391.0">
+                                 <font>
+                                    <Font size="32.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </StackPane>
+                        <StackPane prefHeight="70.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle fx:id="choice1" arcHeight="40.0" arcWidth="40.0" fill="#9972c9" height="78.0" onMouseClicked="#choiceClicked" onMouseEntered="#choicesOnEnter" onMouseExited="#choicesOnExit" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" width="436.0" />
+                              <Text fx:id="choiceText1" fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="answer" textAlignment="CENTER" wrappingWidth="391.0">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="78.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle fx:id="choice2" arcHeight="40.0" arcWidth="40.0" fill="#9972c9" height="78.0" onMouseClicked="#choiceClicked" onMouseEntered="#choicesOnEnter" onMouseExited="#choicesOnExit" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" width="436.0" />
+                              <Text fx:id="choiceText2" fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="answer" textAlignment="CENTER" wrappingWidth="391.0">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="78.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle fx:id="choice3" arcHeight="40.0" arcWidth="40.0" fill="#9972c9" height="78.0" onMouseClicked="#choiceClicked" onMouseEntered="#choicesOnEnter" onMouseExited="#choicesOnExit" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" width="436.0" />
+                              <Text fx:id="choiceText3" fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="answer" textAlignment="CENTER" wrappingWidth="391.0">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="78.0" prefWidth="200.0">
+                           <children>
+                              <Rectangle fx:id="choice4" arcHeight="40.0" arcWidth="40.0" fill="#9972c9" height="78.0" onMouseClicked="#choiceClicked" onMouseEntered="#choicesOnEnter" onMouseExited="#choicesOnExit" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" width="436.0" />
+                              <Text fx:id="choiceText4" fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="answer" textAlignment="CENTER" wrappingWidth="391.0">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</GridPane>

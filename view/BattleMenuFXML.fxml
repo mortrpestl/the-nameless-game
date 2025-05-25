@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="placeholder.BattleMenuFXMLController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1024.0">
+         <children>
+            <StackPane prefHeight="444.0" prefWidth="1026.0">
+               <children>
+                  <ImageView fx:id="bg" fitHeight="434.0" fitWidth="1026.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../graphics/background.jpg" />
+                     </image>
+                  </ImageView>
+                  <BorderPane prefHeight="415.0" prefWidth="1026.0">
+                     <top>
+                        <BorderPane prefHeight="0.0" prefWidth="1026.0" BorderPane.alignment="CENTER">
+                           <left>
+                              <ImageView fitHeight="70.0" fitWidth="70.0" onMouseClicked="#pressPause" onMouseEntered="#changePauseButtonOnEnter" onMouseExited="#changePauseButtonOnExit" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                 <image>
+                                    <Image url="@../graphics/pauseButton.png" />
+                                 </image>
+                                 <BorderPane.margin>
+                                    <Insets left="15.0" top="17.5" />
+                                 </BorderPane.margin>
+                              </ImageView>
+                           </left>
+                        </BorderPane>
+                     </top>
+                  </BorderPane>
+                  <AnchorPane mouseTransparent="true" prefHeight="433.0" prefWidth="1026.0">
+                     <children>
+                        <ImageView fx:id="help1" fitHeight="152.0" fitWidth="80.0" layoutX="136.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/Mermaid.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="help2" fitHeight="120.0" fitWidth="80.0" layoutX="372.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/Wizard.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="you" fitHeight="120.0" fitWidth="80.0" layoutX="252.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/Warrior.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="harm3" fitHeight="120.0" fitWidth="80.0" layoutX="806.0" layoutY="292.0" onMouseClicked="#enemySelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/Medusa.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="harm2" fitHeight="120.0" fitWidth="80.0" layoutX="698.0" layoutY="276.0" onMouseClicked="#enemySelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/Vampire.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="harm1" fitHeight="120.0" fitWidth="80.0" layoutX="570.0" layoutY="252.0" onMouseClicked="#enemySelect" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/Ghost.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="36.8" fitWidth="70.4" layoutX="257.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/You.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="help1Health" fitHeight="16.0" fitWidth="376.0" layoutX="126.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/hpBar5.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="help2Health" fitHeight="16.0" fitWidth="376.0" layoutX="354.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/hpBar3.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="harm1Health" fitHeight="16.0" fitWidth="376.0" layoutX="574.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/hpBar2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="harm2Health" fitHeight="16.0" fitWidth="376.0" layoutX="689.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/hpBar1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="harm3Health" fitHeight="16.0" fitWidth="376.0" layoutX="814.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/hpBar4.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+            <FlowPane prefHeight="314.0" prefWidth="1024.0" style="-fx-background-color: #d5afff;">
+               <children>
+                  <AnchorPane fx:id="healthSec" prefHeight="77.0" prefWidth="223.0">
+                     <children>
+                        <ImageView fx:id="youHealth" fitHeight="103.0" fitWidth="369.0" layoutX="7.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../graphics/hpBar4big.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="health20" fill="WHITE" layoutX="51.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="28.0">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="health40" layoutX="140.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="28.0">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="health60" layoutX="184.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="28.0">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="health80" layoutX="228.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="78" textAlignment="CENTER" wrappingWidth="28.0">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="health100" layoutX="262.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100" textAlignment="CENTER" wrappingWidth="49.67938277563371">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <FlowPane.margin>
+                        <Insets left="20.0" right="40.0" top="10.0" />
+                     </FlowPane.margin>
+                  </AnchorPane>
+                  <ImageView fx:id="attackButton" fitHeight="116.0" fitWidth="266.0" onMouseClicked="#trigAttack" onMouseEntered="#buttonsOnEnter" onMouseExited="#buttonsOnExit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../graphics/attackbutton.png" />
+                     </image>
+                     <FlowPane.margin>
+                        <Insets left="30.0" right="30.0" top="15.0" />
+                     </FlowPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="itemButton" fitHeight="116.0" fitWidth="266.0" onMouseClicked="#checkItems" onMouseEntered="#buttonsOnEnter" onMouseExited="#buttonsOnExit" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../graphics/itembutton.png" />
+                     </image>
+                     <FlowPane.margin>
+                        <Insets top="15.0" />
+                     </FlowPane.margin>
+                  </ImageView>
+               </children>
+            </FlowPane>
+         </children>
+      </VBox>
+      <Pane fx:id="finPane" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="576.0" prefWidth="1024.0" style="-fx-background-color: #190039; -fx-opacity: 0.85;" />
+            <VBox alignment="CENTER" prefHeight="576.0" prefWidth="1024.0">
+               <children>
+                  <Text fx:id="bigFinText" fill="#e1d7ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Congratulations!" textAlignment="CENTER">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="smallFinText" fill="#e1d7ff" layoutX="300.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You won the battle!" textAlignment="CENTER" wrappingWidth="512.0">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <HBox fx:id="noLives" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="147.0" prefWidth="1024.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Rectangle fx:id="close" arcHeight="40.0" arcWidth="40.0" fill="#9972c9" height="78.0" onMouseClicked="#closeGame" onMouseEntered="#rectOnMouseEnter" onMouseExited="#rectOnMouseExit" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" style="-fx-opacity: 1;" width="300.0" />
+                                    <Text fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;back to location&gt;">
+                                       <font>
+                                          <Font size="28.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="hasLives" alignment="CENTER" prefHeight="147.0" prefWidth="1024.0">
+                           <children>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Rectangle fx:id="backLoc" arcHeight="40.0" arcWidth="40.0" fill="#9972c9" height="78.0" onMouseClicked="#back" onMouseEntered="#rectOnMouseEnter" onMouseExited="#rectOnMouseExit" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" style="-fx-opacity: 1;" width="300.0" />
+                                    <Text fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;back to location&gt;">
+                                       <font>
+                                          <Font size="28.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </StackPane>
+                              <StackPane prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <Rectangle fx:id="backMain" arcHeight="40.0" arcWidth="40.0" fill="#9972c9" height="78.0" onMouseClicked="#back" onMouseEntered="#rectOnMouseEnter" onMouseExited="#rectOnMouseExit" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeMiterLimit="1.0" strokeWidth="0.0" style="-fx-opacity: 1;" width="300.0" />
+                                    <Text fill="WHITE" mouseTransparent="true" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;back to main menu&gt;">
+                                       <font>
+                                          <Font size="28.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</StackPane>
