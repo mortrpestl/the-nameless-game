@@ -6,7 +6,7 @@ Disclaimer: It is actually named [Name] (hence "The Nameless Game") due to the l
 
 *[Name]* is a puzzle, RPG, and battle game made in Java and JavaFX. It revolves around a character who does not remember anything about the fallen world he or she has been subjected to. Through their actions, they must restore the currently dimensionless world into the beautiful paradise it once was, while also recalling who they were before everything became unremarkable.
 
-This game was mainly contributed to by Diogn Mortera (@mortrpestl) and Skye Del Rosario (@kskyeddr).
+This game's ideas and code were  mainly created and written by Diogn Mortera (@mortrpestl) and Skye Del Rosario (@kskyeddr).
 
 ## UML Diagram
 ![UML Diagram](https://raw.githubusercontent.com/mortrpestl/the-nameless-game/main/uml-diagram.png)
